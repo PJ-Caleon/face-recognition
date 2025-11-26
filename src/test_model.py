@@ -50,16 +50,15 @@ while True:
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
 
         # Add label
-        label = "pj" if name.lower() == "pj" else "Unknown"
+        label = name.capitalize()
 
         cv2.putText(frame, label, (left, top - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2)
 
-        if name.lower() == "pj":
-            print("✅ Detected: Hello PJ")
-            # ser.write(b"HELLO_PJ\n")
+        if name != "Unknown":
+            print(f"✅ Detected: Hello {name.capitalize()}")
         else:
             print("❌ Unknown face detected")
-            # ser.write(b"UNKNOWN\n")
+
 
 
     # Show the frame

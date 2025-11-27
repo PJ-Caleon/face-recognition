@@ -37,7 +37,7 @@ while True:
         best_match_index = face_distances.argmin()
 
         # Check if the best match is within tolerance
-        if face_distances[best_match_index] < 0.3:  # adjust this threshold if needed
+        if face_distances[best_match_index] < 0.4:  # adjust this threshold if needed
             name = known_names[best_match_index]
         else:
             name = "Unknown"

@@ -2,7 +2,8 @@ import cv2
 import pickle
 import numpy as np
 import mediapipe as mp
-from tflite_runtime.interpreter import Interpreter
+# from tflite_runtime.interpreter import Interpreter
+from tensorflow.lite.python.interpreter import Interpreter
 
 
 interpreter = Interpreter(model_path="facenet.tflite")

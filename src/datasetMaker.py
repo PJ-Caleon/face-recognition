@@ -4,7 +4,7 @@ import os
 
 name = "pj"
 
-def capture_photos(duration_seconds=120, interval_seconds=5, output_dir="generated_dataset"):
+def capture_photos(duration_seconds=120, interval_seconds=5, output_dir="test_dataset"):
     # Create directory if it doesn't exist
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -49,4 +49,4 @@ def capture_photos(duration_seconds=120, interval_seconds=5, output_dir="generat
     cap.release()
     cv2.destroyAllWindows()
 
-capture_photos(duration_seconds=2000, interval_seconds=1)
+capture_photos(duration_seconds=500, interval_seconds=1)

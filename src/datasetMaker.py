@@ -2,7 +2,7 @@ import cv2
 import time
 import os
 
-name = "Luis"
+name = "pj"
 
 def capture_photos(duration_seconds=120, interval_seconds=5, output_dir="generated_dataset"):
     # Create directory if it doesn't exist
@@ -49,4 +49,4 @@ def capture_photos(duration_seconds=120, interval_seconds=5, output_dir="generat
     cap.release()
     cv2.destroyAllWindows()
 
-capture_photos(duration_seconds=120, interval_seconds=1)
+capture_photos(duration_seconds=2000, interval_seconds=1)
